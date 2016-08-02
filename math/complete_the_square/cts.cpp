@@ -66,11 +66,7 @@ void cts(float a, float b, float c, float d) {
     /// step 4 - factor perfect square
     float square_val = sqrt(c);
     cout << "completed square: (x";
-    if (b < 0) {
-	cout << " - ";
-    } else {
-	cout << " + ";
-    }
+    cout << ((b < 0) ? " - " : " + ");
     cout << square_val << ")^2 = " << d << endl;
 }
 
